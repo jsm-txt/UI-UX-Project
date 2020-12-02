@@ -12,6 +12,7 @@
 </head>
 <body style="background-color: whitesmoke; color: black;">
   
+  <!-- Nav bar -->
   <nav class="navbar navbar-expand-lg navbar-white bg-white p-3 ">
     <a class="navbar-brand pl-5  " href="#">WalkTheDog</a>
     <form class="form-inline my-2 my-lg-0">
@@ -23,13 +24,13 @@
 
   <nav class="navbar navbar-expand-lg navbar-white bg-white p-1">
       <ul class="navbar-nav ml-5">
-        <li class="nav-item active">
+        <li class="nav-item ">
           <a class="nav-link" href="#"> Home</a>
         </li>
-        <li class="nav-item active">
+        <li class="nav-item ">
           <a class="nav-link" href="#"> Your Profile</a>
         </li>
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="#"> Find dogs near you</a>
         </li>
         <li class="nav-item">
@@ -41,91 +42,77 @@
       </ul>
   </nav>
 
+
   <section>
-    <div class="container-fluid mt-5 bg-whitesmoke">
-      <div class="row">
-        <div class="card-group">
-        <div class="col-sm">
-          <div class="card bg-white p-5">
-            <img src="https://via.placeholder.com/720x720" class="card-img-top rounded mx-auto d-block" alt="...">
-            <h5 class="card-title">Profile Image</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          </div>
-        </div>
-
-
-        <div class="col-sm-7">
-          <div class="card bg-white p-5">
-            
-            <div class="card-body">
-              <h5 class="card-title">Find Owners near You</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        </div>
-      </div>
+    <div class="jumbotron bg-white m-5">
+      <h1 class="display-5" style="color: black"> Who let the dogs out???</h1>
+      <p class="lead">We don't know but you can walk them by joining</p>
+      <hr class="my-4">
+      <p>Sign up now to become a member walk dogs. Unless you brought your own, have others walk them!</p>
+      <a class="btn btn-primary btn-lg" href="index.html" role="button">Sign up</a>
     </div>
-
-
-
   </section>
 
     
-    <section>
-        <div class="container">
-            <form class="m-5 p-5">
-                <div class="form-group row">
-                  <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-                    <div class="col-sm-10">
-                        <input type="email" class="form-control" id="inputEmail3">
-                    </div>
-                </div>
-                <div class="form-group row">
-                  <label for="inputPassword3" class="col-sm-2 col-form-label">Your Name</label>
-                  <div class="col-sm-10">
-                    <input type="Name" class="form-control" id="inputName">
-                  </div>
-                </div>
-                <fieldset class="form-group">
-                  <div class="row">
-                    <legend class="col-form-label col-sm-2 pt-0" style="color: black">Pick one!</legend>
-                    <div class="col-sm-10">
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="newsletter" id="newsletter" value="option1">
-                        <label class="form-check-label" for="newsletter">
-                          Click to recieve only the newsletter
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="newsletter" id="advertisments" value="option2">
-                        <label class="form-check-label" for="newsletter">
-                          Click to recieve newsletter and advertisments
-                        </label>
-                       </div>
-                    </div>
-                  </div>
-                </fieldset>
-                <div class="form-group row">
-                  <div class="col-sm-2">Agree to reading the terms and conditions</div>
-                  <div class="col-sm-10">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" id="check">
-                      <label class="form-check-label" for="check">
-                        I have not read the terms and conditions but I'm going to lie and say I did
-                      </label>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <div class="col-sm-10">
-                    <button type="submit" class="btn btn-primary">Subscribe Now</button>
-                  </div>
-                </div>
-              </form>
+  <section>
+    <div class="container">
+      <form class="m-5 p-5">
+        <div class="form-group row">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="inputEmail3">
+          </div>
         </div>
-    </section>
+        <div class="form-group row">
+          <label for="inputPassword3" class="col-sm-2 col-form-label">Your Name</label>
+          <div class="col-sm-10">
+            <input type="Name" class="form-control" id="inputName">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputPassword3" class="col-sm-2 col-form-label">Your Username</label>
+          <div class="col-sm-10">
+            <input type="Name" class="form-control" id="inputName">
+          </div>
+        </div>
+        <fieldset class="form-group">
+          <div class="row">
+            <legend class="col-form-label col-sm-2 pt-0" style="color: black">Dog walker or Dog owner?</legend>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="newsletter" id="newsletter" value="option1">
+                <label class="form-check-label" for="newsletter">
+                  Yes, I wish to walk doggos.
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="newsletter" id="advertisments" value="option2">
+                <label class="form-check-label" for="newsletter">
+                  Yes, I have a doggo that needs some walking.
+                </label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+        <div class="form-group row">
+          <div class="col-sm-2">Agree to reading the terms and conditions</div>
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="check">
+              <label class="form-check-label" for="check">
+                I have not read the terms and conditions but I'm going to lie and say I did
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-10">
+            <button type="submit" class="btn btn-primary">Join now</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
 
 
 </body>
