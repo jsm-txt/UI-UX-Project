@@ -9,8 +9,18 @@
   
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://bootswatch.com/4/cyborg/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
+<style>
+img{
+  width: 800px;
+  height: 400px;
+  object-fit: cover;
+}
+
+</style>
 <body style="background-color: whitesmoke; color: black;">
+
  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-white bg-white p-3 ">
     <a class="navbar-brand pl-5  " href="#">WalkTheDog</a>
@@ -43,11 +53,11 @@
 
   <!-- Home Image -->
   <section id="Home">
-    <div class="container-fluid bg-whitesmoke">
+    <div class="container-fluid bg-whitesmoke" >
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner col-lg-12">
-          <div class="carousel-item active">
-            <img src="images/dog.jpg"  class="d-block w-100" alt="...">
+          <div class="carousel-item active"  >
+            <img src="images/dog.jpg" style="height: 100%;" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5>Find your new best friend</h5>
               <p>Help walk dogs.</p>
@@ -85,9 +95,9 @@
     <div class="container-fluid mt-5 bg-whitesmoke">
       
         <div class="card-deck">
-        <div class="col-sm-6">
-          <div class="card bg-white">
-            <img src="images/dogs.jpg"  class="card-img-top" alt="...">
+        <div data-aos="fade-right"  class="col-sm-6">
+          <div class="card bg-white" >
+            <img src="images/dogs.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Find Dogs Near You</h5>
               <p class="card-text"> Find dogs to walk now. Make a friend you won't regret</p>
@@ -95,7 +105,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-6">
+        <div data-aos="fade-left" class="col-sm-6">
           <div class="card bg-white">
             <img src="images/walks.jpg"  class="card-img-top" alt="...">
             <div class="card-body">
@@ -112,12 +122,12 @@
 
 
   <section id="Dogs">
-    <div class="container-fluid mt-5">
-      <div class="card-group">
-        <div class="card bg-white">
+    <div data-aos="fade-up" style="height: 400px" class="container-fluid mt-5" >
+      <div class="card-group"  >
+        <div id= "profile_item" class="card bg-white">
           <img class="card-img-top" src="images/doggo.jpg" alt="Card image cap">
         </div>
-        <div class="card bg-white">
+        <div id= "profile_item" class="card bg-white">
           <div class="card-body">
             <h5 class="card-title">Dog's name: PUBG</h5>
             <p class="card-text">This dog needs some walking, click to scedule an appointment</p>
@@ -128,12 +138,12 @@
       </div>
     </div>
 
-    <div class="container-fluid mt-5">
+    <div data-aos="fade-up" style="height: 400px" class="container-fluid mt-5" >
       <div class="card-group">
-        <div class="card bg-white">
+        <div id= "profile_item" class="card bg-white">
           <img class="card-img-top" src="images/doggos.jpg"  alt="Card image cap">
         </div>
-        <div class="card bg-white">
+        <div id= "profile_item" class="card bg-white">
           <div class="card-body">
             <h5 class="card-title">Dog's Name: Max</h5>
             <p class="card-text">This dog loves walking in the city and making friends</p>
@@ -146,10 +156,10 @@
   </section>
 
   <section id="Walkers">
-    <div class="container-fluid mt-5">
+    <div data-aos="fade-up" style="height: 400px" class="container-fluid mt-5" >
       <div class="card-group">
         <div class="card bg-white">
-          <img class="card-img-top" src="images/walker.jpg" alt="Card image cap">
+          <img src="images/walker.jpg" alt="Card image cap">
         </div>
         <div class="card bg-white">
           <div class="card-body">
@@ -162,7 +172,7 @@
       </div>
     </div>
 
-    <div class="container-fluid mt-5">
+    <div data-aos="fade-up" class="container-fluid mt-5" style="height: 400px">
       <div class="card-group">
         <div class="card bg-white">
           <img class="card-img-top" src="images/walkers.jpg" alt="Card image cap">
@@ -210,3 +220,11 @@
     </div>
   </section>
 </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+</script>
+<script>
+  // Initialize Animate On Scroll
+  AOS.init();
+</script>
+
+</html>
